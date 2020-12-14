@@ -23,3 +23,8 @@ CREATE TABLE sales(
 COPY sales FROM 'C:\Ravi\Data Analytics\Exercise Files\SQL\sales.csv'
 			DELIMITER ','
 			CSV HEADER;
+			
+ ---Analyzing sales revenue with diffrent aspects/ Double-check with power bi numbers
+ SELECT SUM(total) FROM sales;
+ SELECT SUM(total) FROM sales WHERE branch='A';
+ SELECT SUM(total) FROM sales WHERE city='Mandalay';
